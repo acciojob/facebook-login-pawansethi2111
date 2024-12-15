@@ -1,8 +1,48 @@
 <html>
   <head>
     <title>Facebook Login</title>
+	  <style>
+		  body{
+			  background-color:#f6f6f6;
+			  display:flex;
+			  justify-content:center;
+			  align-items:center;
+			  height:100vh;
+			  
+		  }
+		  #left{
+			  width:450px;
+			  margin-top:70px;
+			  display:inline-block;
+		  }
+
+		  form{
+			  display:flex;
+			  width:300px;
+			  background-color:white;
+			  paddng:20px;
+			  border-radius:5px;
+			  box-shadow:0 0 10px #ccc;
+			  flex-direction:column;
+		  }
+	  </style>
   </head>
   <body>
     <!-- Write your code here -->
+	  <div class = "facebook" id= "left">		  
+		  <img src = "https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-1.png" alt  = "Facebook logo" width="150px" height ="50px">
+		  <p>Facebook helps you connect and share with the people in your life.
+</p>
+	  </div>
+
+	  <div class= "facebook" id = "right">
+		  <form>
+		  <input type = "text" id = "email" placeholder= "Email address or phone number">
+		  <input type = "password" id = "password" placeholder = "Password">
+		  <button type= "submit">Log in</button>
+		  <a href ="">Forgotten account?</a>
+		</form>
+		  <button class ="signup">Create new account</button>
+	  </div>
   </body>
 </html>
